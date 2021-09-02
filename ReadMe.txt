@@ -1,16 +1,19 @@
-Python 3.7.8. Simple connection to MySQL using Flask and getting data from HTML page 
+Python 3.7.8. Simple Python to MySQL connection. Outputting data from MySQL to HTML page
 --------------------------------------
 
+1) --------------------------------------
 Python - 3.7.8
 Mysql  - 8.0.26.0
-Flask-MySQLdb
 
---------------------------------------
-pip install Flask
-pip install Flask-MySQLdb
---------------------------------------
+2) --------------------------------------
+pip3 install Flask
+pip3 install Flask-MySQLdb
 
+3) --------------------------------------
 Db name ----- logtest
+
+CREATE SCHEMA `logtest` DEFAULT CHARACTER SET utf8 ;
+USE `logtest`;
 
 CREATE TABLE IF NOT EXISTS `accounts` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,
@@ -19,6 +22,6 @@ CREATE TABLE IF NOT EXISTS `accounts` (
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8; 
 
---------------------------------------
+4) --------------------------------------
 INSERT INTO `accounts` (`username`, `password`) VALUES ('test', 'test');
 
