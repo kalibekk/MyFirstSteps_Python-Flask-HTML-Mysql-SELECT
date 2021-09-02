@@ -12,7 +12,7 @@ app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = '123456'
 app.config['MYSQL_DB'] = 'logtest'
 
-print("connect successful!!")
+print("connect successful")
 
 
 @app.route('/')
