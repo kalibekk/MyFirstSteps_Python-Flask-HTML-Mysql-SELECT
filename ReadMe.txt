@@ -14,3 +14,7 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   	`password` varchar(255) NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8; 
+
+------------------------------------------
+INSERT INTO `accounts` (`username`, `password`) VALUES ('test', '2');
+
