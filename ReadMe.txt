@@ -3,8 +3,12 @@ Python 3.7.8. Simple connection to MySQL using Flask and getting data from HTML 
 
 Python - 3.7.8
 Mysql  - 8.0.26.0
-
 Flask-MySQLdb
+
+--------------------------------------
+pip install Flask
+pip install Flask-MySQLdb
+--------------------------------------
 
 Db name ----- logtest
 
@@ -15,6 +19,6 @@ CREATE TABLE IF NOT EXISTS `accounts` (
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8; 
 
-------------------------------------------
-INSERT INTO `accounts` (`username`, `password`) VALUES ('test', '2');
+--------------------------------------
+INSERT INTO `accounts` (`username`, `password`) VALUES ('test', 'test');
 
