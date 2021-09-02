@@ -9,7 +9,7 @@ mysql = MySQL(app)
 # Configure DB
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '123456'
+app.config['MYSQL_PASSWORD'] = 'pass'
 app.config['MYSQL_DB'] = 'logtest'
 
 print("connect successful")
